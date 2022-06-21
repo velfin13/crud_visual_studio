@@ -7,3 +7,12 @@ C:\Users\Velkin\source\repos\crud_practica\CapNegocio\obj\Debug\CapNegocio.cspro
 C:\Users\Velkin\source\repos\crud_practica\CapNegocio\obj\Debug\CapNegocio.csproj.CopyComplete
 C:\Users\Velkin\source\repos\crud_practica\CapNegocio\obj\Debug\CapNegocio.dll
 C:\Users\Velkin\source\repos\crud_practica\CapNegocio\obj\Debug\CapNegocio.pdb
+C:\Users\Velkin\source\repos\crud_visual_studio\CapNegocio\bin\Debug\CapNegocio.dll
+C:\Users\Velkin\source\repos\crud_visual_studio\CapNegocio\bin\Debug\CapNegocio.pdb
+C:\Users\Velkin\source\repos\crud_visual_studio\CapNegocio\bin\Debug\CapDatos.dll
+C:\Users\Velkin\source\repos\crud_visual_studio\CapNegocio\bin\Debug\CapDatos.pdb
+C:\Users\Velkin\source\repos\crud_visual_studio\CapNegocio\obj\Debug\CapNegocio.csproj.AssemblyReference.cache
+C:\Users\Velkin\source\repos\crud_visual_studio\CapNegocio\obj\Debug\CapNegocio.csproj.CoreCompileInputs.cache
+C:\Users\Velkin\source\repos\crud_visual_studio\CapNegocio\obj\Debug\CapNegocio.csproj.CopyComplete
+C:\Users\Velkin\source\repos\crud_visual_studio\CapNegocio\obj\Debug\CapNegocio.dll
+C:\Users\Velkin\source\repos\crud_visual_studio\CapNegocio\obj\Debug\CapNegocio.pdb

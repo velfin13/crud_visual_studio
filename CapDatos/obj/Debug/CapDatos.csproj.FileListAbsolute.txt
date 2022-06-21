@@ -4,3 +4,9 @@ C:\Users\Velkin\source\repos\crud_practica\CapDatos\obj\Debug\CapDatos.csproj.As
 C:\Users\Velkin\source\repos\crud_practica\CapDatos\obj\Debug\CapDatos.csproj.CoreCompileInputs.cache
 C:\Users\Velkin\source\repos\crud_practica\CapDatos\obj\Debug\CapDatos.dll
 C:\Users\Velkin\source\repos\crud_practica\CapDatos\obj\Debug\CapDatos.pdb
+C:\Users\Velkin\source\repos\crud_visual_studio\CapDatos\bin\Debug\CapDatos.dll
+C:\Users\Velkin\source\repos\crud_visual_studio\CapDatos\bin\Debug\CapDatos.pdb
+C:\Users\Velkin\source\repos\crud_visual_studio\CapDatos\obj\Debug\CapDatos.csproj.AssemblyReference.cache
+C:\Users\Velkin\source\repos\crud_visual_studio\CapDatos\obj\Debug\CapDatos.csproj.CoreCompileInputs.cache
+C:\Users\Velkin\source\repos\crud_visual_studio\CapDatos\obj\Debug\CapDatos.dll
+C:\Users\Velkin\source\repos\crud_visual_studio\CapDatos\obj\Debug\CapDatos.pdb

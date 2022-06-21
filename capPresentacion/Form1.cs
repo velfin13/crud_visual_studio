@@ -26,12 +26,34 @@ namespace capPresentacion
 
         private void mostrarProductos()
         {
-            dataGridView1.DataSource = cn_producto.Mostrar();
+            CN_Producto producto = new CN_Producto();
+            ventada.DataSource = producto.Mostrar();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            try {
+                cn_producto.insertarProduc(txtnombre.Text, txtdescripcion.Text, txtmarca.Text, txtprecio.Text, txtstock.Text);
+                MessageBox.Show("Se inserto correctamente");
+                mostrarProductos();
+            } catch(Exception ex) {
+                MessageBox.Show("Hubo un error por: "+ex);
+            }
         }
     }
 }

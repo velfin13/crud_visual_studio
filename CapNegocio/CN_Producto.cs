@@ -19,5 +19,9 @@ namespace CapNegocio
             data = productoCD.Mostrar();
             return data;
         }
+
+        public void insertarProduc(string nombre, string desc, string marca, string precio, string stock) {
+            productoCD.insertar(nombre, desc, marca, Convert.ToDouble(precio),Convert.ToInt32(stock));
+        }
     }
 }

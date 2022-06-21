@@ -15,7 +15,10 @@ namespace CapDatos
         DataTable table = new DataTable();
         SqlCommand comando = new SqlCommand();
 
-        public DataTable Mostrar()
+        /* 
+         *  Mostart productos con sql 
+         * 
+           public DataTable Mostrar()
         {
             comando.Connection = conexion.AbrirConexion();
             comando.CommandText = "SELECT * FROM Productos;";
@@ -23,6 +26,51 @@ namespace CapDatos
             table.Load(leer);
             conexion.CerrarConexion();
             return table;
+        }
+        */
+
+        /*
+         *  Mostrar productos con procedimiento almacenado
+         */
+
+        public DataTable Mostrar()
+        {
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "MostrarProductos";
+            comando.CommandType = CommandType.StoredProcedure;
+            leer = comando.ExecuteReader();
+            table.Load(leer);
+            conexion.CerrarConexion();
+            return table;
+        }
+
+
+        /* 
+         *  ingresar productos con sql 
+         * 
+            public void insertar(string nombre,string desc,string marca,double precio ,int stock) {
+                comando.Connection = conexion.AbrirConexion();
+                comando.CommandText = "INSERT INTO Productos VALUES ('"+nombre+"','"+desc+"','"+marca+"',"+precio+","+stock+");";
+                comando.CommandType = CommandType.Text;
+                comando.ExecuteNonQuery();
+
+            }
+        */
+
+        /* 
+         *  ingresar productos con procedimiento almacenado 
+         */
+        public void insertar(string nombre,string desc,string marca,double precio ,int stock) {
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "InsetarProductos";
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@nombre", nombre);
+            comando.Parameters.AddWithValue("@descrip", desc);
+            comando.Parameters.AddWithValue("@marca", marca);
+            comando.Parameters.AddWithValue("@precio", precio);
+            comando.Parameters.AddWithValue("@stock", stock);
+            comando.ExecuteNonQuery();
+
         }
 
     }
