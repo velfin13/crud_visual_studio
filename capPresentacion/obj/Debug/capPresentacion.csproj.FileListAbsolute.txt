@@ -1,0 +1,15 @@
+C:\Users\Velkin\source\repos\crud_practica\capPresentacion\bin\Debug\capPresentacion.exe.config
+C:\Users\Velkin\source\repos\crud_practica\capPresentacion\bin\Debug\capPresentacion.exe
+C:\Users\Velkin\source\repos\crud_practica\capPresentacion\bin\Debug\capPresentacion.pdb
+C:\Users\Velkin\source\repos\crud_practica\capPresentacion\bin\Debug\CapNegocio.dll
+C:\Users\Velkin\source\repos\crud_practica\capPresentacion\bin\Debug\CapDatos.dll
+C:\Users\Velkin\source\repos\crud_practica\capPresentacion\bin\Debug\CapNegocio.pdb
+C:\Users\Velkin\source\repos\crud_practica\capPresentacion\bin\Debug\CapDatos.pdb
+C:\Users\Velkin\source\repos\crud_practica\capPresentacion\obj\Debug\capPresentacion.csproj.AssemblyReference.cache
+C:\Users\Velkin\source\repos\crud_practica\capPresentacion\obj\Debug\capPresentacion.Form1.resources
+C:\Users\Velkin\source\repos\crud_practica\capPresentacion\obj\Debug\capPresentacion.Properties.Resources.resources
+C:\Users\Velkin\source\repos\crud_practica\capPresentacion\obj\Debug\capPresentacion.csproj.GenerateResource.cache
+C:\Users\Velkin\source\repos\crud_practica\capPresentacion\obj\Debug\capPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\Velkin\source\repos\crud_practica\capPresentacion\obj\Debug\capPresentacion.csproj.CopyComplete
+C:\Users\Velkin\source\repos\crud_practica\capPresentacion\obj\Debug\capPresentacion.exe
+C:\Users\Velkin\source\repos\crud_practica\capPresentacion\obj\Debug\capPresentacion.pdb

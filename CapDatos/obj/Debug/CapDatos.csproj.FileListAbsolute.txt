@@ -1,0 +1,6 @@
+C:\Users\Velkin\source\repos\crud_practica\CapDatos\bin\Debug\CapDatos.dll
+C:\Users\Velkin\source\repos\crud_practica\CapDatos\bin\Debug\CapDatos.pdb
+C:\Users\Velkin\source\repos\crud_practica\CapDatos\obj\Debug\CapDatos.csproj.AssemblyReference.cache
+C:\Users\Velkin\source\repos\crud_practica\CapDatos\obj\Debug\CapDatos.csproj.CoreCompileInputs.cache
+C:\Users\Velkin\source\repos\crud_practica\CapDatos\obj\Debug\CapDatos.dll
+C:\Users\Velkin\source\repos\crud_practica\CapDatos\obj\Debug\CapDatos.pdb
