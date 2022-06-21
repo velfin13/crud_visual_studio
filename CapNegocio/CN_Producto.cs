@@ -28,5 +28,10 @@ namespace CapNegocio
         {
             productoCD.editar(nombre, desc, marca, Convert.ToDouble(precio), Convert.ToInt32(stock), Convert.ToInt32(id));
         }
+
+        public void eliminarProduct(string id)
+        {
+            productoCD.eliminar(Convert.ToInt32(id));
+        }
     }
 }

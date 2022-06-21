@@ -92,5 +92,15 @@ namespace CapDatos
             comando.Parameters.Clear();
         }
 
+        public void eliminar(int id) {
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "EliminarProducto";
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@idpro", id);
+            comando.ExecuteNonQuery();
+            conexion.CerrarConexion();
+            comando.Parameters.Clear();
+        }
+
     }
 }

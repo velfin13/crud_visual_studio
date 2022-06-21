@@ -107,5 +107,21 @@ namespace capPresentacion
                 MessageBox.Show("Selecciona la fila a editar");
             }
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (ventada.SelectedRows.Count > 0)
+            { 
+                idProduct = ventada.CurrentRow.Cells["Id"].Value.ToString();
+                cn_producto.eliminarProduct(idProduct);
+                MessageBox.Show("Se Elimino correctamente");
+                mostrarProductos();
+
+            }
+            else
+            {
+                MessageBox.Show("Selecciona la fila a editar");
+            }
+        }
     }
 }
