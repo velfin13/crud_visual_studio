@@ -14,6 +14,8 @@ namespace capPresentacion
     public partial class Form1 : Form
     {
         private CN_Producto cn_producto = new CN_Producto();
+        private string idProduct = null;
+        private bool editarState = false;
         public Form1()
         {
             InitializeComponent();
@@ -45,14 +47,64 @@ namespace capPresentacion
 
         }
 
+        private void reiniciarCampos()
+        {
+            txtnombre.Text = "";
+            txtdescripcion.Text = "";
+            txtmarca.Text = "";
+            txtprecio.Text = "";
+            txtstock.Text = "";
+
+        }
+
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            try {
-                cn_producto.insertarProduc(txtnombre.Text, txtdescripcion.Text, txtmarca.Text, txtprecio.Text, txtstock.Text);
-                MessageBox.Show("Se inserto correctamente");
-                mostrarProductos();
-            } catch(Exception ex) {
-                MessageBox.Show("Hubo un error por: "+ex);
+            if(editarState == false)
+            {
+                try
+                {
+                    cn_producto.insertarProduc(txtnombre.Text, txtdescripcion.Text, txtmarca.Text, txtprecio.Text, txtstock.Text);
+                    MessageBox.Show("Se inserto correctamente");
+                    mostrarProductos();
+                    reiniciarCampos();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Hubo un error por: " + ex);
+                }
+            }
+
+            if (editarState == true)
+            {
+                try {
+                    cn_producto.editarProduc(txtnombre.Text, txtdescripcion.Text, txtmarca.Text, txtprecio.Text, txtstock.Text,idProduct);
+                    MessageBox.Show("Se edito correctamente");
+                    mostrarProductos();
+                    reiniciarCampos();
+                    editarState = false;
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show("No se pudo editar por: " + ex);
+                }
+            }
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            if(ventada.SelectedRows.Count > 0)
+            {
+                editarState = true;
+                txtnombre.Text = ventada.CurrentRow.Cells["Nombre"].Value.ToString();
+                txtdescripcion.Text = ventada.CurrentRow.Cells["Descripcion"].Value.ToString();
+                txtmarca.Text = ventada.CurrentRow.Cells["Marca"].Value.ToString();
+                txtprecio.Text = ventada.CurrentRow.Cells["Precio"].Value.ToString();
+                txtstock.Text = ventada.CurrentRow.Cells["Stock"].Value.ToString();
+                idProduct = ventada.CurrentRow.Cells["Id"].Value.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Selecciona la fila a editar");
             }
         }
     }

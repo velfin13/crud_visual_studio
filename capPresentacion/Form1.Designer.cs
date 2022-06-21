@@ -41,6 +41,7 @@ namespace capPresentacion
             this.txtprecio = new System.Windows.Forms.TextBox();
             this.txtmarca = new System.Windows.Forms.TextBox();
             this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ventada)).BeginInit();
             this.SuspendLayout();
             // 
@@ -147,11 +148,22 @@ namespace capPresentacion
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
+            // btnEditar
+            // 
+            this.btnEditar.Location = new System.Drawing.Point(12, 425);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(90, 36);
+            this.btnEditar.TabIndex = 12;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1187, 421);
+            this.ClientSize = new System.Drawing.Size(1187, 488);
+            this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.txtmarca);
             this.Controls.Add(this.txtprecio);
@@ -187,6 +199,7 @@ namespace capPresentacion
         private System.Windows.Forms.TextBox txtprecio;
         private System.Windows.Forms.TextBox txtmarca;
         private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Button btnEditar;
     }
 }
 

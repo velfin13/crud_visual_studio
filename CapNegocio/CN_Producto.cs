@@ -23,5 +23,10 @@ namespace CapNegocio
         public void insertarProduc(string nombre, string desc, string marca, string precio, string stock) {
             productoCD.insertar(nombre, desc, marca, Convert.ToDouble(precio),Convert.ToInt32(stock));
         }
+
+        public void editarProduc(string nombre, string desc, string marca, string precio, string stock,string id)
+        {
+            productoCD.editar(nombre, desc, marca, Convert.ToDouble(precio), Convert.ToInt32(stock), Convert.ToInt32(id));
+        }
     }
 }

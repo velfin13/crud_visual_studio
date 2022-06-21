@@ -53,6 +53,7 @@ namespace CapDatos
                 comando.CommandText = "INSERT INTO Productos VALUES ('"+nombre+"','"+desc+"','"+marca+"',"+precio+","+stock+");";
                 comando.CommandType = CommandType.Text;
                 comando.ExecuteNonQuery();
+                conexion.CerrarConexion();
 
             }
         */
@@ -70,7 +71,25 @@ namespace CapDatos
             comando.Parameters.AddWithValue("@precio", precio);
             comando.Parameters.AddWithValue("@stock", stock);
             comando.ExecuteNonQuery();
+            conexion.CerrarConexion();
+            comando.Parameters.Clear();
+        }
 
+
+        public void editar(string nombre, string desc, string marca, double precio, int stock,int id)
+        {
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = "EditarProductos";
+            comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@nombre", nombre);
+            comando.Parameters.AddWithValue("@descrip", desc);
+            comando.Parameters.AddWithValue("@marca", marca);
+            comando.Parameters.AddWithValue("@precio", precio);
+            comando.Parameters.AddWithValue("@stock", stock);
+            comando.Parameters.AddWithValue("@id", id);
+            comando.ExecuteNonQuery();
+            conexion.CerrarConexion();
+            comando.Parameters.Clear();
         }
 
     }
